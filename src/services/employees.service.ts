@@ -8,24 +8,6 @@ import {
 } from '../interfaces/employees/employees.interfaces'
 import { httpClient } from './httpClient'
 
-// const res = await axios.post(
-//     'https://dev-1pcbhvb4.us.auth0.com/oauth/token',
-//     {
-//         headers: {
-//             'content-type': 'application/json',
-//             'Access-Control-Allow-Origin': '*',
-//         },
-//         body: JSON.stringify({
-//             client_id: 'DfLZmgVWFGvHDdK0Rp8CdEDSA8qj8Cc4',
-//             client_secret:
-//                 'EOv1A20svk35ZRSFas-_V3L68KzDJT4PDx3VMnlk4fHz1SXKSKdE-Bqc6VnF025K',
-//             audience: 'https://motoboyo.be',
-//             grant_type: 'client_credentials',
-//         }),
-//     }
-// )
-
-// console.log({ res })
 export const getAllEmployees = async (): Promise<IEmployee[]> => {
     const token = localStorage.getItem('token') as string
 
